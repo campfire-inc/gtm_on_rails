@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    gtm_on_rails (0.1.11)
+    gtm_on_rails (0.1.12)
       rails (>= 3.2.22)
 
 GEM
@@ -116,4 +116,4 @@ DEPENDENCIES
   mysql2
 
 BUNDLED WITH
-   1.15.1
+   1.16.1
