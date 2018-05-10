@@ -9,7 +9,9 @@ module GtmOnRails
         else
           before_action :initialize_data_layer
         end
-        helper_method :data_layer
+        if respond_to?(:helper_method)
+          helper_method :data_layer
+        end
       end
 
       def data_layer
