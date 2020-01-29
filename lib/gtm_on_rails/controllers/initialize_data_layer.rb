@@ -4,14 +4,8 @@ module GtmOnRails
       extend ActiveSupport::Concern
 
       included do
-        if Rails::VERSION::MAJOR == 3
-          before_filter :initialize_data_layer
-        else
-          before_action :initialize_data_layer
-        end
-        if respond_to?(:helper_method)
-          helper_method :data_layer
-        end
+        before_action :initialize_data_layer
+        helper_method :data_layer
       end
 
       def data_layer
